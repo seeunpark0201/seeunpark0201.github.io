@@ -53,6 +53,11 @@ body {
 
 /*products style*/
 
+#sort-by {
+	padding-right: 300px;
+	float: right;
+}
+
 .grid {
 	display: grid;
 	width: 59vw;
@@ -89,6 +94,7 @@ body {
 	margin-top: 0em;
 	/*background: red;*/
 }
+
 
 /*product details style*/
 #detail {
