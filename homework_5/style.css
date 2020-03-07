@@ -39,6 +39,7 @@ body {
 }
 
 #banner{
+	background-size: cover;
 	overflow: hidden;
 }
 

@@ -1,0 +1,135 @@
+header {
+	font-family: 'KoHo', sans-serif;
+	text-align: left;
+	padding: 10px;
+	color: brown;
+}
+
+nav {
+	text-align: center;
+	font-size: 20px;
+
+}
+
+header a {
+	color: brown;
+	padding: 12px 50px;
+	text-decoration: none;
+}
+
+header a:hover {
+	background-color: #E9BCB7;
+	color: black;
+	text-decoration: underline;
+	transition: 0.3s ease-in-out all;
+}
+
+body {
+	font-family: 'KoHo', sans-serif;
+}
+
+#logo{
+	text-align: left;
+	font-size: 36px;
+}
+
+#logo a:hover {
+	text-decoration: none;
+	background-color: white;
+}
+
+#banner{
+	background-size: cover;
+	overflow: hidden;
+}
+
+.pic1{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#deliver {
+	text-align: center;
+}
+
+/*products style*/
+
+#sort-by {
+	padding-right: 300px;
+	float: right;
+}
+
+.grid {
+	display: grid;
+	width: 59vw;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background: blue;*/
+	grid-template-columns: 17.67vw 17.67vw 17.67vw;
+    grid-column-gap: 1em;
+    /*grid-row-gap: 0em;*/
+    /*float: center; */
+}
+
+.grid-item {
+	text-align: center;
+	width:100%;
+}
+
+.grid-item a:hover {
+	background-color: #E9BCB7;
+}
+
+.grid img {
+	width: 100%;
+	/*background: pink;*/
+}
+
+/*#grid div img{
+    width: 100px;
+
+}*/
+
+.grid p {
+	margin-top: 0em;
+	/*background: red;*/
+}
+
+
+/*product details style*/
+#detail {
+	float: left;
+	padding-left: 60px;
+	padding-top: 50px;
+}
+
+#detail-pic {
+	width: 650px;
+	height: 400px;
+	object-fit: cover;
+}
+
+#options {
+	width: 200px;
+	float: left;
+	padding-left: 60px;
+	padding-top: 50px;
+	padding-right: 10px;
+}
+
+#add-to-cart {
+	padding-top: 50px;
+}
+
+/* The container must be positioned relative: 
+code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select */ 
+
+select {
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+}
+
+
+
