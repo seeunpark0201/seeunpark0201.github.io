@@ -86,32 +86,6 @@ function showCart() {
 
             //set delete button
 
-            var filled = document.getElementById("cartItems");
-            filled.append(product);
-
-        }
-    }
-    document.getElementById("cartQ").value = inCart.length;
-
-}
-
-//delete cart items if cart isn't empty
-function deleteFromCart() {
-    if(quantity != null){
-        document.getElementById('cartQ').value = cart.length;
-        localStorage.setItem("cart", JSON.stringify(cart));
-
-        cart.remove([bun.quantity, bun.glazing, bun.price]);
-
-function removeFromCart(itemToRemove){
-var cart = JSON.parse(localStorage.getItem("cartArray"));
-    var removeIndex = itemToRemove.getAttribute("value2");
-    cart.splice(removeIndex , 1);
-    localStorage.setItem("cartArray", JSON.stringify(cart));
-    getCart();
-}
-    }
-}
 
 
 //different options users can pick (quantity and glazing)
