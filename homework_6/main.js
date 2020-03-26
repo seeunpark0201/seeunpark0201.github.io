@@ -102,7 +102,7 @@ function updateCart() {
         originalBun.append("Flavor: Original");
 
         var cartItem = document.getElementById("cartItems");
-        cartItem.append(originalBun);
+        cartItem.appendChild(originalBun);
 
         //create new div for cart items
         var product = document.createElement("div");
@@ -110,19 +110,19 @@ function updateCart() {
         //new element for quantity of buns
         var qty = document.createElement("p");
         var qtyText = document.createTextNode("Quantity: " +inCart[i][0]);
-        qty.append(qtyText);
+        qty.appendChild(qtyText);
         product.append(qty);
 
         //new element for glazing of buns
         var glz = document.createElement("p");
         var glzText = document.createTextNode("Glazing: " +inCart[i][1]);
-        glz.append(glzText);
+        glz.appendChild(glzText);
         product.append(glz);
 
         //new element for price of buns
         var price = document.createElement("p");
         var priceText = document.createTextNode("Price: " +inCart[i][2]);
-        price.append(priceText);
+        price.appendChild(priceText);
         product.append(price);
 
         //sets delete emoji which onclick, delete item from cart
