@@ -1,6 +1,5 @@
  
-var cart = [];
-
+var cart = []; //will be used throughout to append and delete items in cart
 var quantity;
 var glazing;
 var price;
