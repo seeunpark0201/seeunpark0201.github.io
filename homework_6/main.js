@@ -13,7 +13,7 @@ function bun(quantity, glazing, price) {
     this.price = price;
 }
 
-//different options users can pick (quantity and glazing)
+//below are different options users can pick (quantity and glazing)
 function q1(){
     bun.quantity = 1;
     bun.price = document.getElementById("1bun").value;
