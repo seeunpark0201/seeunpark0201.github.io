@@ -186,61 +186,26 @@ input {
 	padding: 1em;
 }
 
-/* shopping cart page */
-.container {
-	padding-top: 3em;
-	align-content: center;
-	align-items: center;
-	text-align: center;
-
-}
-
-.container.content-section {
-	border: 1px solid #008888;
-	align-content: center;
-	align-items: center;
-}
-
-.section-header {
-
-}
-
-.cart-header {
-	padding-bottom: 20px;
-	padding-top: 12px;
-}
-
-.cart-item{
- 
-}
-
-.cart-row {
-	text-align: center;
-}
-
-.cart-item.cart-header.cart-column {
-	padding-right: 10em;
-	padding-bottom: 3em;
-	padding-top: 3em;
-}
-
-.cart-price.cart-header.cart-column {
-	padding-right: 10em;
-	padding-left: 15em;
-	padding-bottom: 3em;
-	padding-top: 3em;
-
-}
-.cart-item.cart-column {
-	align-items: left;
-	align-content: left;
-
-}
-
 #cartQ {
 	padding: 0;
 	width: 12px;
 	font-size: 16px;
 }
 
+/* shopping cart page */
+#cartItems{
+    color: brown;
+    padding-top: 50px;
+    align-content: center;
+    text-align: center;
+    
+}
 
+/* purchase button */
+#purchase {
+	margin-top: 20px;
+
+    text-align: center;
+    padding: 15px;
+
+}

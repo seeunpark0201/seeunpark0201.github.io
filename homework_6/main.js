@@ -3,45 +3,144 @@ var cart = [];
 
 var quantity;
 var glazing;
+var price;
 
 
 //object
-function bun(quantity, glazing) {
+function bun(quantity, glazing, price) {
     this.quantity = quantity;
     this.glazing = glazing;
+    this.price = price;
 }
 
-//add to cart and update number of items in cart 
+//if users chose quantity and glazing, add to cart and update number of items in cart 
 function addToCart() {
     if(quantity !== null && glazing !== null){
 
-        document.getElementById('cartQ').value = cart.length;
-        localStorage.setItem("cart", JSON.stringify(cart));
+        document.getElementById('cartQ').value = cart.length+1;
 
-        cart.push([bun.quantity, bun.glazing]);
-        console.log(cart)
+        if(bun.quantity == undefined){
+            bun.quantity = 1;
+            bun.price = 3;
+        }
+
+        if(bun.glazing == undefined){
+            bun.glazing = "none";
+        }
+
+        cart.push([bun.quantity, bun.glazing, bun.price]);
+
+        var JSONcart = JSON.stringify(cart);
+        localStorage.setItem("cart", JSONcart);
     }
 
 }
 
+//show everything in cart when shopping cart page loads
+function showCart() {
+    //retrieve cart information
+    var getJSON = localStorage.getItem("cart");
+    var inCart = JSON.parse(getJSON);
 
-//options users can pick 
+    //change content of page depending on choices user made
+    document.getElementById("cartItems").innerHTML = "";
+
+    //if cart is empty, page says that there are no items in cart
+    if(document.getElementById("cartQ").value == null){
+        var noItem = document.createElement("p");
+        var noItemText = document.createTextNode("There are no items in your cart!");
+        noItem.append(noItemText);
+
+    //if cart not empty, show items in cart
+    } else {
+        for (var i = 0; i < inCart.length; i++){
+
+            //code inspiration from https://www.w3schools.com/js/js_htmldom_nodes.asp
+            var originalBun = document.createElement("p");
+            originalBun.append("Flavor: Original");
+
+            var cartItem = document.getElementById("cartItems");
+            cartItem.append(originalBun);
+
+
+            //create new div for cart items
+            var product = document.createElement("div");
+            product.append(qty);
+
+            var qty = document.createElement("p");
+            var qtyText = document.createTextNode=inCart[i][0];
+            qty.append(qtyText);
+
+            var glz = document.createElement("p");
+            var glzText = document.createTextnode = inCart[i][1];
+            glz.append(glzText);
+            product.append(glz);
+
+            var price = document.createElement("p");
+            var priceText = document.createTextnode = inCart[i][2];
+            price.append(priceText);
+            product.append(price);
+
+            //set all items as a class called inCart
+            product.setAttribute("class", "inCart");
+
+            //set delete button
+
+            var filled = document.getElementById("cartItems");
+            filled.append(product);
+
+        }
+    }
+    document.getElementById("cartQ").value = inCart.length;
+
+}
+
+//delete cart items if cart isn't empty
+function deleteFromCart() {
+    if(quantity != null){
+        document.getElementById('cartQ').value = cart.length;
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        cart.remove([bun.quantity, bun.glazing, bun.price]);
+
+function removeFromCart(itemToRemove){
+var cart = JSON.parse(localStorage.getItem("cartArray"));
+    var removeIndex = itemToRemove.getAttribute("value2");
+    cart.splice(removeIndex , 1);
+    localStorage.setItem("cartArray", JSON.stringify(cart));
+    getCart();
+}
+    }
+}
+
+
+//different options users can pick (quantity and glazing)
 function q1(){
-    bun.quantity = document.getElementById("1bun").value;
+    bun.quantity = 1;
+    bun.price = document.getElementById("1bun").value;
+
+    //update total price based on user's choice
+    document.getElementsByName("total").value = bun.price;
 
 }
 
 function q2(){
-    bun.quantity = document.getElementById("3bun").value;
+    bun.quantity = 3;
+    bun.price = document.getElementById("3bun").value;
+    document.getElementsByName("total").value = bun.price;
 }
 
 
 function q3(){
-    bun.quantity = document.getElementById("6bun").value;
+    bun.quantity = 6;
+    bun.price = document.getElementById("6bun").value;
+    document.getElementsByName("total").value = bun.price;
 }
 
 function q4(){
-    bun.quantity = document.getElementById("12bun").value;
+    bun.quantity = 12;
+    bun.price = document.getElementById("12bun").value;
+    document.getElementsByName("total").value = bun.price;
 }
 
 function g1(){
@@ -59,6 +158,7 @@ function g3(){
 function g4(){
     bun.glazing = document.getElementById("double-chocolate").value; 
 }
+
 
 
 

@@ -10,7 +10,7 @@
 		<!-- js -->
 		<script src="main.js" type="text/javascript"></script>	
 	</head>
-	<body>
+	<body onload="showCart();">
 		<header>
 			<div id="logo">
 				<a href="index.html">Bun Bun <br> &nbsp;&nbsp;&nbsp;&nbsp; Bake Shop</a>
@@ -36,7 +36,8 @@
 			<br>
 			<br>
 
-			<!-- code from https://demos.jquerymobile.com/1.0a4/docs/forms/forms-radiobuttons.html -->
+			<!-- code mostly from https://demos.jquerymobile.com/1.0a4/docs/forms/forms-radiobuttons.html -->
+
 			<!-- quantity option -->
 			<form action="#" method="post" class="quantity" id="quantity">
 				<fieldset>
@@ -68,13 +69,13 @@
 				        <input type="radio" name="glazing" id="vanilla-milk" value="vanilla-milk" onclick="g3()" />
 				        <label for="vanilla-milk">Vanilla-milk&nbsp;&nbsp;&nbsp;</label>
 
-				        <input type="radio" name="glazing" id="double-chocolate" value="double-chocolate" onclick="g4()"" />
+				        <input type="radio" name="glazing" id="double-chocolate" value="double-chocolate" onclick="g4()"/>
 				        <label for="double-chocolate">Double-chocolate</label>
 				</fieldset>
 			</form>
 
 			<!-- add to cart -->
-			<input type="submit" value="Add to Cart" id="addToCart" onclick="addToCart();">
+			<input type="submit" value="Add to Cart" id="addToCart" onclick="addToCart();"/>
 		</div>	
 	</body>
 </html>
