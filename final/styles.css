@@ -237,6 +237,34 @@ li.thick{
 	font-size: 1.5em;
 	line-height: 2em;
 }
+
+#w1{
+	max-width: 100%;
+}
+
+.w-imgs{
+	padding-bottom: 2em;
+	margin-bottom: 5%;
+}
+
+.usability-testing{
+	margin-top: 4em;;
+}
+
+#wireframes{
+	max-width: 100%;
+	max-height: auto;
+}
+
+.f-img{
+	max-width:100%;
+	margin-bottom: 20%;
+}
+
+#prototype{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 /* .wrapper {
     display: grid;
     max-width: 1200px;
