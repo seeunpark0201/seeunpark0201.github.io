@@ -1,0 +1,101 @@
+<html>
+	<head> 
+		<title> Se Eun Park </title>
+		
+		<!-- meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- bootstrap framework -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"> </script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"> </script>
+
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+		<link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+		
+	</head>
+	<body onload="myFunction()">
+		<div class="topnav">
+			<div id="logoimg">
+				<a href="index.html">
+					<img id="logo" src="images/logo.png" alt="logo">
+				</a>
+			</div>
+			<div id="links">
+				<a href="images/resume1.pdf" target="_blank">Resume</a>
+				<a href="about.html">About</a>
+				<!-- <a href="play.html">Play</a> --> 
+				<a href="index.html">Work</a>
+			</div>
+		</div>
+		<div id="intro">
+			<h1> <strong> Hi you! </strong> </h1>
+			<h2> I am a senior studying <strong> psychology </strong> and <strong> human-computer interaction </strong> at Carnegie Mellon University. I am looking to design empathetic solutions that transcend cultural boundaries. </h2>
+		</div>
+		<div id="project">
+			<div class="container-fluid">
+				<div class = "row">
+		        	<div class = "col-lg-6 col-md-12 col-sm-12 col-xs-12 nopadding iot">
+				        <img src = "images/iot.png" class="img-responsive" >
+				        <div class="overlay">
+				        	<div class="text">SmartCity - IoT</div>
+				        </div>
+		         	</div>
+			        <div class = "col-lg-6 col-md-12 col-sm-12 project_col nopadding barb">
+						<a href="barbarian.html">
+					        <img src = "images/barbarian.png" class="img-responsive">
+					        <div class="overlay">
+					        	<div class="text">Barbarian - Product Design</div>
+					        </div>
+					    </a>
+			        </div>
+					<div class="w-100"></div>
+					<div class = "col-lg-6 col-md-12 col-sm-12 col-xs-12 nopadding covidshare">
+			        	<img src = "images/covidshare.png" class="img-responsive">
+			        	<div class="overlay">
+				        	<div class="text">Covidshare - Mobile App</div>
+				        </div>
+			        </div>
+			        <div class = "col-lg-6 col-md-12 col-sm-12 col-xs-12 nopadding aeo">
+			        	<img src = "images/aeo.png" class="img-responsive">
+			        	<div class="overlay">
+				        	<div class="text">AEO - Service Design</div>
+				        </div>
+			        </div>
+		        </div>
+		    </div>
+		</div>
+		<!-- <div class="loader-wrapper">
+			<div class="lds-heart">
+				<script>
+					$(window).on("load",function(){
+						$(".loader-wrapper").fadeOut("slow");
+					});
+				</script>
+			</div>
+		</div> -->
+		<div id="loader-wrapper">
+			<div class="lds-heart"><div>
+		</div>
+		<script>
+			var myVar; 
+			function myFunction() {
+				myVar = setTimeout(showPage, 1000);
+			}
+			function showPage() {
+				document.getElementById("loader-wrapper").style.display = "none";
+				document.getElementByClass("lds-heart").style.display="block";
+			}
+		</script>
+		<!-- <script>
+			$(window).load(function() {
+				$(".loader-wrapper").hide();
+			});
+		// </script> -->
+	</body>
+	<!-- <footer id="footer">
+		<p> &copy; Se Eun Park 2020 - made with &#9749; & &#128150; </p>
+	</footer> -->
+</html>
