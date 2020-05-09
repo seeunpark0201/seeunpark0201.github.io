@@ -1,0 +1,295 @@
+/* intro section */
+
+body {
+	
+	font-family: 'KoHo', sans-serif;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 1%;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 150%
+}
+
+h4 {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+strong {
+	color: #8B80F9;
+}
+
+/*style top navigation bar*/
+.topnav {
+	margin-top: 1%;
+	margin-right: 10%;
+    overflow: hidden;
+    background-color: "white";
+}
+
+#logo {
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+}
+
+#logoimg {
+	float: left;
+}
+
+
+#links {
+	float: right;
+}
+
+/* Style the topnav links */
+.topnav a {
+	display: inline-block;
+	vertical-align: top;
+    float: right;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+#links a:hover {
+    color: #778899;;
+    text-decoration: underline;
+}
+
+
+#intro {
+
+	margin-left: 16%;
+	margin-right: 40%;
+	margin-top: 2%;
+	background-color: white;
+}
+
+#links li {
+	display: inline-block;
+	font-weight: 100;
+
+}
+
+#links a {
+	text-decoration: none;
+	color: #8B80F9;
+}
+
+
+#others {
+	float: right;
+}
+
+#project{
+	margin-left: 16%;
+	margin-right: 16%;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+/* project pictures */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8B80F9;
+}
+
+/* hover states of projects */
+.iot:hover .overlay {
+	opacity: 1;
+}
+
+.barb:hover .overlay {
+	opacity: 1;
+}
+
+.covidshare:hover .overlay{
+	opacity: 1;
+}
+
+.aeo:hover .overlay{
+	opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* styling for project section */
+.row {
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.header-img{
+	width: 100%;
+}
+
+.typeface {
+	padding-right: 50px;
+}
+3
+.squares {
+	padding-left: 50px;
+}
+
+#pic {
+	width: 100%;
+	height: auto;
+
+}
+
+#footer {
+	position: relative;
+	padding-top: 5%;
+	margin-top: -100px;
+	height: 100px;
+	clear: both;
+	text-align: center;
+	display: block;
+}
+
+/*  about me page style */
+
+#aboutme{
+	margin-left: 16%;
+	margin-right: 16%;
+	max-height: 70%;
+	max-width: 70%;
+}
+
+.right-text{
+	margin-right: 16%;
+	font-size: 14px;
+}
+
+.connect{
+	margin-left: 8%;
+}
+
+/* project page */
+
+.project-title{
+	margin-top: 2%;
+}
+
+.overview{
+	margin-right:16%;
+}
+
+.project-details{
+	margin-left: 16%;
+	margin-right: 16%;
+}
+
+/* below picture on barbarian page */
+
+.project-text{
+	margin-left: 16%;
+	margin-right: 16%;
+	line-height: 2em;
+	font-size: 15px;
+
+}
+
+.problem{
+	margin-top: 5%;
+}
+
+p.thick{
+	font-weight: bolder;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+li.thick{
+	font-weight: bolder;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+#w1{
+	max-width: 100%;
+}
+
+.w-imgs{
+	padding-bottom: 2em;
+	margin-bottom: 5%;
+}
+
+.usability-testing{
+	margin-top: 4em;;
+}
+
+#wireframes{
+	max-width: 100%;
+	max-height: auto;
+}
+
+.f-img{
+	max-width:100%;
+	margin-bottom: 20%;
+}
+
+#prototype{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	max-width: 100%;
+	max-height: auto;
+}
+
+#loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* bootstrap was being a bit funky so hardcoded some responsiveness */
+
+@media only screen and (max-width: 1060px) {
+	.right-text{
+		margin-left: 16%;
+	}
+	.overview{
+		margin-left: 16%;
+	}
+}
+
+@media (min-width: 600px) {
+  .box { grid-template-columns: repeat(2, 1fr); }
+}
+
