@@ -179,6 +179,12 @@ strong {
 	display: block;
 }
 
+#construction {
+	text-align: center;
+	padding-top: 10%;
+	
+}
+
 /*  about me page style */
 
 #aboutme{
@@ -277,6 +283,7 @@ li.thick{
 	justify-content: center;
 	align-items: center;
 }
+
 
 /* bootstrap was being a bit funky so hardcoded some responsiveness */
 

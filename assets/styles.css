@@ -161,12 +161,19 @@ strong {
 3
 .squares {
 	padding-left: 50px;
+
 }
 
 #pic {
 	width: 100%;
 	height: auto;
 
+}
+
+#construction {
+	text-align: center;
+	margin-top: 10%;
+	font-size: 54px;
 }
 
 #footer {
