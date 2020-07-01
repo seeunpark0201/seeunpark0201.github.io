@@ -285,6 +285,13 @@ li.thick{
 	align-items: center;
 }
 
+.videolink {
+	display: block;
+	margin: 0 auto;
+	align-items: center;
+	padding-left: 25%;
+}
+
 /* bootstrap was being a bit funky so hardcoded some responsiveness */
 
 @media only screen and (max-width: 1060px) {
