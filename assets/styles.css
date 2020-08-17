@@ -1,7 +1,7 @@
 /* intro section */
 
 body {
-	
+
 	font-family: 'KoHo', sans-serif;
 }
 
@@ -99,10 +99,11 @@ strong {
 
 .img-responsive{
 	width: 100%;
+	padding: 20px;
 }
 
 /* project pictures */
-.overlay {
+  .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -114,7 +115,23 @@ strong {
   opacity: 0;
   transition: .5s ease;
   background-color: #8B80F9;
-}
+	padding: -30000;
+} 
+
+ /* .overlay {
+  position: absolute;
+  top: 30;
+  bottom: 10;
+  border-radius: 10px;
+  left: 45;
+  right: 0;
+  height: 86%;
+  width: 86.5%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8B80F9;
+	padding: -30000;
+} */
 
 /* hover states of projects */
 .iot:hover .overlay {
@@ -158,7 +175,7 @@ strong {
 .typeface {
 	padding-right: 50px;
 }
-3
+
 .squares {
 	padding-left: 50px;
 
@@ -179,12 +196,15 @@ strong {
 #footer {
 	position: relative;
 	padding-top: 5%;
+	padding-bottom: 5%;
 	margin-top: -100px;
 	height: 100px;
 	clear: both;
 	text-align: center;
 	display: block;
 }
+
+
 
 /*  about me page style */
 
@@ -306,4 +326,3 @@ li.thick{
 @media (min-width: 600px) {
   .box { grid-template-columns: repeat(2, 1fr); }
 }
-
