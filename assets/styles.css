@@ -99,7 +99,6 @@ strong {
 
 .img-responsive{
 	width: 100%;
-	padding: 20px;
 }
 
 /* project pictures */
@@ -115,7 +114,7 @@ strong {
   opacity: 0;
   transition: .5s ease;
   background-color: #8B80F9;
-	padding: -30000;
+  padding: -30000;
 } 
 
  /* .overlay {
@@ -204,6 +203,22 @@ strong {
 	display: block;
 }
 
+#brainstormed {
+	display: block;
+    background: transparent;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 10px #999;	
+}
+
+#sensors {
+	display: block;
+    background: transparent;
+    width: 90%;
+    margin-right: auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 10px #999;	}
 
 
 /*  about me page style */
@@ -307,9 +322,7 @@ li.thick{
 
 .videolink {
 	display: block;
-	margin: 0 auto;
 	align-items: center;
-	padding-left: 25%;
 }
 
 /* bootstrap was being a bit funky so hardcoded some responsiveness */
